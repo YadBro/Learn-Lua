@@ -8,3 +8,8 @@ elseif (age >= young) then
 else
   print('He is baby')
 end
+
+
+if type(age) == "nil" then
+  print(nil)
+end
