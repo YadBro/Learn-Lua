@@ -12,6 +12,13 @@
   Multiple comment
 ]]
 
+--[[
+  Three kinds variables in lua
+  - local
+  - global
+  - table fields <=  This is a special type of variable that can hold anything except nil including functions.
+]]
+
 -- create a local variable in lua;
 print('==== Create a global variable in lua, must be in capital case')
 FULLNAME = 'yadi apriyadi'
@@ -52,3 +59,12 @@ print(type(stringType))
 print(type(numberType))
 print(type(booleanType))
 print(type(tableType))
+
+-- Multiple variables and values in one line
+print('\n==== Multiple variables and values in one line')
+-- global (For global variable must be in uppercase definition)
+G, L = 20, 30
+print(G, L, G + L)
+-- local
+local a, b = 1, 4
+print(a, b, a + b)
